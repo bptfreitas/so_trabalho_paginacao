@@ -7,7 +7,9 @@
 
 enum page_table_err{
 
-    MEM_SZ_GT_VM_SZ
+    MEM_SZ_GT_VM_SZ,
+    VM_SIZE_NOT_POWER2,
+    MEM_SIZE_NOT_POWER2
     
 };
 
@@ -19,7 +21,7 @@ typedef struct {
 
 } page_table_t;
 
-page_table_t* init_page_table( int vm_sz, int mem_sz);
+int init_page_table( int vm_sz, int mem_sz, page_table_t* table);
 
 
 #endif
