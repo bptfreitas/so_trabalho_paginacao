@@ -2,7 +2,6 @@
 
 #define __PAGE_ENTRY_H__
 
-
 typedef struct {
 
     int modified;
